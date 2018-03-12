@@ -16,5 +16,11 @@ int main() {
 	cout << (void*) (s+1) << endl;
 	cout << (void*) &s[1] << endl;
 
+// pointer to a constant
+	const int* pi ; // declare a pointer to const int
+	const int a = 3; // declare a const int
+	pi = &a; // this is OK
+//	*pi = a; // this is NOT!
+
 	return 0;
 }
